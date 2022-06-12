@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-import { UserAuth } from "../Context/AuthContext";
-import { db } from "../firebase";
+import { UserAuth } from "../../Context/AuthContext";
+import { db } from "../../firebase";
 import { updateDoc, doc, onSnapshot } from "firebase/firestore";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -38,7 +38,7 @@ const SavedShows = () => {
 
   return (
     <>
-      <h2 className="text-white font-bold md:text-xl p-4">My Shows</h2>
+      <h2 className="text-white font-bold md:text-xl p-4">Ma Liste</h2>
       <div className="relative flex items-center group">
         <MdChevronLeft
           onClick={slideLeft}

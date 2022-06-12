@@ -26,7 +26,7 @@ const Navbar = () => {
       {user?.email ? (
         <div>
           <Link to="/account">
-            <button className="text-white pr-4">Mon compte</button>
+            <button className="text-white pr-4">Ma Liste</button>
           </Link>
           <button
             onClick={handleLogout}
